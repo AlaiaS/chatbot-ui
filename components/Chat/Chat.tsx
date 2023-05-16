@@ -99,6 +99,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
           key: apiKey,
           prompt: updatedConversation.prompt,
           temperature: updatedConversation.temperature,
+          stream: true,
         };
         const endpoint = getEndpoint(plugin);
         let body;
